@@ -47,7 +47,7 @@ $ dmesg | tail -1
 [ 1325.631657] Hello world!
 ```
 
-# Check module
+## Check module
 
 ```bash
 $ lsmod |grep hello
@@ -99,6 +99,9 @@ make[1]: Entering directory `/usr/src/linux-headers-3.2.0-74-generic-pae`
   CC      /home/rcprata/Codes/eudyptula/task01/hello.mod.o
   LD [M]  /home/rcprata/Codes/eudyptula/task01/hello.ko
 make[1]: Leaving directory `/usr/src/linux-headers-3.2.0-74-generic-pae`
-[...]
+```
+If you don't like use this environment variable anymore:
+
+```bash
 $ unset kernel_version
 ```
