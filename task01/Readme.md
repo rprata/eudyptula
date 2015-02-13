@@ -67,15 +67,15 @@ $ dmesg | tail -1
 ```bash
 $ make clean
 make -C /lib/modules/3.2.0-76-generic-pae/build M=/home/rcprata/Codes/eudyptula/task01 clean
-make[1]: Entering directory `/usr/src/linux-headers-3.2.0-76-generic-pae'
+make[1]: Entering directory `/usr/src/linux-headers-3.2.0-76-generic-pae`
   CLEAN   /home/rcprata/Codes/eudyptula/task01/.tmp_versions
   CLEAN   /home/rcprata/Codes/eudyptula/task01/Module.symvers
-make[1]: Leaving directory `/usr/src/linux-headers-3.2.0-76-generic-pae'
+make[1]: Leaving directory `/usr/src/linux-headers-3.2.0-76-generic-pae`
 ```
 
-## Other kernels
+## Compile to other kernel versions
 
-You could list all kernel version using this command (ubuntu distro). Please, confirm that the 'build' folder is within the kernel directory:
+You could list all kernel versions using this command (ubuntu distro). Please, confirm that the 'build' folder is within the kernel directory (/lib/module/$(kernel_version)):
 ```bash
 $ dpkg --list | grep linux-image
 [...]
@@ -92,13 +92,13 @@ So, you could setup 'kernel_version' environment variable to change kernel versi
 $ export kernel_version=3.2.0-74-generic-pae
 $ make
 make -C /lib/modules/3.2.0-74-generic-pae/build M=/home/rcprata/Codes/eudyptula/task01 modules
-make[1]: Entering directory `/usr/src/linux-headers-3.2.0-74-generic-pae'
+make[1]: Entering directory `/usr/src/linux-headers-3.2.0-74-generic-pae`
   CC [M]  /home/rcprata/Codes/eudyptula/task01/hello.o
   Building modules, stage 2.
   MODPOST 1 modules
   CC      /home/rcprata/Codes/eudyptula/task01/hello.mod.o
   LD [M]  /home/rcprata/Codes/eudyptula/task01/hello.ko
-make[1]: Leaving directory `/usr/src/linux-headers-3.2.0-74-generic-pae'
+make[1]: Leaving directory `/usr/src/linux-headers-3.2.0-74-generic-pae`
 [...]
 $ unset kernel_version
 ```
