@@ -15,13 +15,13 @@ an arbitrary kernel sources directory from an environment variable.
 ```bash
 $ make
 make -C /lib/modules/3.2.0-76-generic-pae/build M=/home/rcprata/Codes/eudyptula/task01 modules
-make[1]: Entering directory `/usr/src/linux-headers-3.2.0-76-generic-pae'
+make[1]: Entering directory `/usr/src/linux-headers-3.2.0-76-generic-pae`
   CC [M]  /home/rcprata/Codes/eudyptula/task01/hello.o
   Building modules, stage 2.
   MODPOST 1 modules
   CC      /home/rcprata/Codes/eudyptula/task01/hello.mod.o
   LD [M]  /home/rcprata/Codes/eudyptula/task01/hello.ko
-make[1]: Leaving directory `/usr/src/linux-headers-3.2.0-76-generic-pae'
+make[1]: Leaving directory `/usr/src/linux-headers-3.2.0-76-generic-pae`
 
 ```
 
