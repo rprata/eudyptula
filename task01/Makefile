@@ -1,9 +1,9 @@
 obj-m += hello.o
 
-kernel_version ?= $(shell uname -r)
+LINUX_KERNEL_VERSION ?= $(shell uname -r)
 
 all:
-	make -C /lib/modules/$(kernel_version)/build M=$(PWD) modules
+	make -C /lib/modules/$(LINUX_KERNEL_VERSION)/build M=$(PWD) modules
 
 clean:
-	make -C /lib/modules/$(kernel_version)/build M=$(PWD) clean
+	make -C /lib/modules/$(LINUX_KERNEL_VERSION)/build M=$(PWD) clean

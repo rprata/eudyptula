@@ -86,10 +86,10 @@ ii  linux-image-3.2.0-44-generic-pae       3.2.0-44.69                          
 [...]
 ```
 
-So, you could setup 'kernel_version' environment variable to change kernel version in compilation:
+So, you could setup 'LINUX_KERNEL_VERSION' environment variable to change kernel version in compilation:
 
 ```bash
-$ export kernel_version=3.2.0-74-generic-pae
+$ export LINUX_KERNEL_VERSION=3.2.0-74-generic-pae
 $ make
 make -C /lib/modules/3.2.0-74-generic-pae/build M=/home/rcprata/Codes/eudyptula/task01 modules
 make[1]: Entering directory `/usr/src/linux-headers-3.2.0-74-generic-pae`
@@ -103,5 +103,5 @@ make[1]: Leaving directory `/usr/src/linux-headers-3.2.0-74-generic-pae`
 If you don't like use this environment variable anymore:
 
 ```bash
-$ unset kernel_version
+$ unset LINUX_KERNEL_VERSION
 ```
