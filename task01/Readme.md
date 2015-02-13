@@ -75,7 +75,7 @@ make[1]: Leaving directory `/usr/src/linux-headers-3.2.0-76-generic-pae`
 
 ## Compile to other kernel versions
 
-You could list all kernel versions using this command (ubuntu distro). Please, confirm that the 'build' folder is within the kernel directory (/lib/module/$(kernel_version)):
+You could list all kernel versions using this command (ubuntu distro). Please, confirm that the 'build' folder is within the kernel directory (/lib/module/$(LINUX_KERNEL_VERSION)):
 ```bash
 $ dpkg --list | grep linux-image
 [...]
