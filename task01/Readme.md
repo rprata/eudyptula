@@ -59,7 +59,7 @@ hello                    892  0
 ```bash
 $ sudo rmmod hello.ko
 $ dmesg | tail -1
-[ 1418.307920] Goodbye world!
+[ 1418.307920] Exiting from my Hello World!
 ```
 
 ## Cleanup

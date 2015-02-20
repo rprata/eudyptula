@@ -1,4 +1,4 @@
-/* Copyright (c) 2015 Renan Prata <renanprata@ieee.com>
+/* Copyright (c) 2015 Renan Prata <renanprata@ieee.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
 #include <linux/kernel.h>
 #include <linux/init.h>
 
-#define KERNEL_MODULE_AUTHOR "Renan Prata"
+#define KERNEL_MODULE_AUTHOR "Renan Prata <renanprata@ieee.org>"
 #define KERNEL_MODULE_DESC "A simple Linux Kernel Module that when loaded prints to the kernel debug log level: \"Hello World!\""
 
 static int __init hello_init(void)
