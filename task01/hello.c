@@ -20,13 +20,13 @@
 
 int init_module(void)
 {
-	printk(KERN_DEBUG "Hello world!\n");
+	printk(KERN_DEBUG "Hello World!\n");
 	return 0;
 }
 
 void cleanup_module(void)
 {
-	printk(KERN_DEBUG "Goodbye world!\n");
+	printk(KERN_DEBUG "Cleaning my Hello World!\n");
 }
 
 MODULE_LICENSE("GPL");
